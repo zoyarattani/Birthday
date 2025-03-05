@@ -13,10 +13,11 @@
             color: red;
             font-family: 'Orbitron', sans-serif;
             text-align: center;
+            position: relative;
         }
         .container {
             padding: 100px 20px;
-            background: rgba(0, 0, 0, 0.7); /* Adding transparency to improve readability */
+            background: rgba(0, 0, 0, 0.7);
             border-radius: 15px;
             display: inline-block;
         }
@@ -54,6 +55,34 @@
             border-radius: 10px;
             box-shadow: 0px 0px 15px red;
         }
+        .character {
+            position: absolute;
+            width: 100px;
+        }
+        .character img {
+            width: 100px;
+            border-radius: 10px;
+        }
+        .speech-bubble {
+            position: absolute;
+            background: white;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 2px 2px 10px gray;
+        }
+        .left {
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .right {
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     </style>
 </head>
 <body>
@@ -67,5 +96,16 @@
             <img src="image.jpg" alt="Darth Vader with Lightsaber">
         </div>
     </div>
+    
+    <!-- Star Wars Characters on the Sides -->
+    <div class="character left">
+        <img src="yoda.jpg" alt="Yoda">
+        <div class="speech-bubble">Happy Birthday, Zayaan!</div>
+    </div>
+    <div class="character right">
+        <img src="stormtrooper.png" alt="Stormtrooper">
+        <div class="speech-bubble">Happy Birthday, Zayaan!</div>
+    </div>
 </body>
 </html>
+
